@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+
+{% block mycontent %}
+<!--container bar start-->
+
+<div class="container">
+  <div class="row">
+  
+    <div class="col-sm-2">
+    
+    </div>
+	
+	
+    <div class="col-sm-8">
+        <table style="width:100%">
+
+                <tr>
+                        <td colspan="4" style=" padding: 20px;text-align: left; border: 3px solid black;border-collapse: collapse;">
+                            <b>NAME:{{getname}}</b><br>
+                            <b>Roll No:{{getregno}}</b><br>
+                            <b>Semester:{{getsemester}}</b><br>
+                            <b>collage:{{getcollage}}</b><br>
+                        </td>
+                        
+                </tr>
+            <tr>
+              <th>Subject Name</th>
+              <th>Mark Obtained</th>
+              <th>Total Mark</th>
+              <th>Grade</th>
+              
+            </tr>
+            <tr>
+              <td>{{sb1n}}</td>
+              <td>{{sb1m}}</td>
+              <td>{{sb1tm}}</td>
+              <td>{{list[0]}}</td>
+            </tr>
+            <tr>
+              <td>{{sb2n}}</td>
+              <td>{{sb2m}}</td>
+              <td>{{sb2tm}}</td>
+              <td>{{list[2]}}</td>
+            </tr>
+            <tr>
+              <td>{{sb3n}}</td>
+              <td>{{sb3m}}</td>
+              <td>{{sb3tm}}</td>
+              <td>{{list[4]}}</td>
+            </tr>
+            <tr>
+              <td>{{sb4n}}</td>
+              <td>{{sb4m}}</td>
+              <td>{{sb4tm}}</td>
+              <td>{{list[6]}}</td>
+            </tr>
+             
+                {% if semresult != jojo %}
+
+                
+                    <tr>
+                  <td colspan="4" class="bg-success" style="padding: 20px;text-align: right;"><b>semestr status is:{{semresult}} </b></td>
+                  </tr>
+             
+            
+                {% else %}
+                
+                
+                  <tr>
+                    <td colspan="4" class="bg-danger" style=" padding: 20px;text-align: right;"><b>semestr status is :{{semresult}} </b></td>
+                    </tr>
+                
+            
+                {% endif %}
+
+          </table>
+        
+
+	</div>
+	  
+    
+	
+	
+	 <div class="col-sm-2">
+      
+	 
+	</div>
+
+  </div>
+</div> 
+<!--container bar end-->
+{% endblock %}

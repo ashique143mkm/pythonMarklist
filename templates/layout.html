@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>B.Tech Marklist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <style>
+	img {
+		border-radius: 8px;
+		width:150px;
+		height:100px;
+		}
+		
+	.figcaption1{
+				
+				text-align: center;
+				text-style:bold;
+				text-indent: -15px;
+				color: orange;
+				margin-left:-90px;
+
+	}
+	.figcaption2{
+				
+				text-align: center;
+				text-style:bold;
+				text-indent: -15px;
+				color: orange;
+				}
+	.footer {
+				
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height:300px;
+				background-color: rgb(60,60,60);
+				color: white;
+				
+				border-radius:1%;
+				margin-top:20px;
+
+			}
+
+	table	{
+			margin-left:30px;
+			margin-top:30px;
+			margin-bottom:20px;
+			}
+
+    table, th, td {
+            border: 3px solid black;
+            border-collapse: collapse;
+            background:lightskyblue;
+                }
+    th{
+        padding: 5px;
+            text-align: center ;
+    }
+ td      {
+            padding: 5px;
+            text-align: left;    
+            }
+        </style>
+	
+	
+</head>
+<body>
+<!--navi bar start-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="/">ICT Acadamy of Kerala</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					
+                    <li class="nav-item"><a class="nav-link" href="/">home</a></button></li>
+                    <li class="nav-item"><a class="nav-link" href="/generate">Generate</a></button></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!--navi bar end-->
+
+<div class="container">
+                {% block mycontent %}
+                {% endblock %}
+            </div>
+
+<!--footer bar start-->
+<div class="footer">
+  <!--container bar start-->
+
+<div class="container">
+  <div class="row">
+  
+    <div class="col-sm-4">
+    <h5>&nbsp;<br/>ICT Acadamy</h5><br/>
+	<p>ICT Academy of Kerala is a Social Enterprise created in a Public Private Partnership model (PPP) for imparting ICT skills to the youths of Kerala and improve their employability opportunities in the Industry. The Company is supported by Govt. of India , partnered by Govt. of Kerala and the ICT industry.</p>
+	</div>
+	
+	<div class="col-sm-1">
+    </div>
+	 
+	 <div class="col-md-4">
+                            <h5>&nbsp;<br/>Contact Details</h5><br/>
+                            <p>
+                                
+                            </p>
+                            <p>ICT Academy of Kerala, Module No.L-9,
+								<br>Thejaswini Building,
+                                <br>Technopark,Trivandrum, 
+                                <br>Telephone: +91 471 2700 811,
+                                <br>Fax: +91 471 2700 812
+								<br>Email: info@ictkerala.org</p>
+								
+                                <span class="fa-link">Website:</span>
+                                <a href="http://www.ictkerala.org">www.ictkerala.org</a>
+								
+     </div>
+	 
+	<div class="col-sm-3">
+    <h5>&nbsp;<br/>Login</h5><br/>
+	
+	<h6>Admin</h6>
+	<h6>User</h6>
+	<h6>Adminitrator</h6>
+	</div>
+	
+	
+	
+	 
+	  
+	 
+	 
+
+  </div>
+</div> 
+<!--container bar end-->
+  
+</div>
+<!--footer bar start-->
+
+        
+        
+
+
+
+
+
+</body>
+</html>
